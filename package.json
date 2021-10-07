@@ -13,7 +13,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.14.5",
     "@stripe/stripe-js": "^1.19.1",
     "axios": "^0.19.2",
     "bcrypt": "^5.0.0",

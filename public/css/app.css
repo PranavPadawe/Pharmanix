@@ -211,12 +211,6 @@
   }
 }
 
-@keyframes noty_modal_out {
-  100% {
-    opacity: 0;
-  }
-}
-
 @-webkit-keyframes noty_anim_in {
   100% {
     transform: translate(0);
@@ -312,11 +306,11 @@ body {
 }
 
 nav li:last-child a {
-  background: #FE5F1E;
+  background: #C32BAD;
 }
 
 nav li:last-child a:hover {
-  background: #b23301;
+  background: #7027A0;
 }
 
 nav li a {
@@ -324,7 +318,7 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #FE5F1E;
+  color: #C32BAD;
 }
 
 section.hero {
@@ -336,13 +330,13 @@ section.hero {
 }
 
 .add-to-cart {
-  border: 2px solid #FE5F1E;
-  color: #FE5F1E;
+  border: 2px solid #C32BAD;
+  color: #C32BAD;
   transition: all 0.3s ease-in-out;
 }
 
 .add-to-cart:hover {
-  background: #FE5F1E;
+  background: #C32BAD;
   border-color: #fff;
   color: #fff;
 }
@@ -352,12 +346,12 @@ section.hero {
 }
 
 .btn-primary {
-  background: #FE5F1E;
+  background: #C32BAD;
   transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover {
-  background: #b23301;
+  background: #7027A0;
 }
 
 section.cart {
@@ -365,7 +359,7 @@ section.cart {
 }
 
 section.cart .amount {
-  color: #FE5F1E;
+  color: #C32BAD;
 }
 
 section.login {
@@ -374,11 +368,11 @@ section.login {
 }
 
 section.login a {
-  color: #FE5F1E;
+  color: #C32BAD;
 }
 
 section.login a:hover {
-  color: #b23301;
+  color: #7027A0;
 }
 
 .noty_theme__mint {
@@ -387,7 +381,7 @@ section.login a:hover {
 }
 
 a.link {
-  color: #FE5F1E;
+  color: #C32BAD;
 }
 
 section.status {
@@ -433,7 +427,7 @@ section.status {
 }
 
 .status-box ul li:nth-child(1) span:before {
-  content: "\F46C";
+  content: "\F481";
 }
 
 .status-box ul li:nth-child(2) span:before {
@@ -441,7 +435,7 @@ section.status {
 }
 
 .status-box ul li:nth-child(3) span:before {
-  content: "\F818";
+  content: "\F466";
 }
 
 .status-box ul li:nth-child(4) span:before {
@@ -484,11 +478,11 @@ section.status {
 }
 
 .status-box ul li.current span {
-  color: #FE5F1E;
+  color: #C32BAD;
 }
 
 .status-box ul li.current span:after {
-  background: #FE5F1E;
+  background: #C32BAD;
 }
 
 .status-box ul li small {

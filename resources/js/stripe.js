@@ -6,28 +6,28 @@ export async function initStripe() {
     const stripe = await loadStripe
     ('pk_test_51Jh8FSSBT8oRQlQV7tDUod7942VrRcxKGWtVSGURF38vCsnf9KgwMRimbnH6zUgupJvmv7RS00BYQjKIklkkJszK00Z7vB76vu');
     let card = null;
-  function mountWidget() {
-          const elements = stripe.elements()
-
-      let style = {
-          base: {
-          color: '#32325d',
-          fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
-          fontSmoothing: 'antialiased',
-          fontSize: '16px',
-          '::placeholder': {
-              color: '#aab7c4'
-          }
-          },
-          invalid: {
-          color: '#fa755a',
-          iconColor: '#fa755a'
-          }
-      };
-
-      card = elements.create('card', { style, hidePostalCode: true })
-      card.mount('#card-element')
-  }
+  // function mountWidget() {
+  //         const elements = stripe.elements()
+  //
+  //     let style = {
+  //         base: {
+  //         color: '#32325d',
+  //         fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+  //         fontSmoothing: 'antialiased',
+  //         fontSize: '16px',
+  //         '::placeholder': {
+  //             color: '#aab7c4'
+  //         }
+  //         },
+  //         invalid: {
+  //         color: '#fa755a',
+  //         iconColor: '#fa755a'
+  //         }
+  //     };
+  //
+  //     card = elements.create('card', { style, hidePostalCode: true })
+  //     card.mount('#card-element')
+  // }
 
     const paymentType = document.querySelector('#paymentType');
     if(!paymentType) {
@@ -70,12 +70,12 @@ if(paymentForm) {
 
 
         //Verify card
-        stripe.createToken(card).then((result) => {
-            formObject.stripeToken = result.token.id;
-            placeOrder(formObject);
-        }).catch((err) => {
-            console.log(err)
-        })
+        // stripe.createToken(card).then((result) => {
+        //     formObject.stripeToken = result.token.id;
+        //     placeOrder(formObject);
+        // }).catch((err) => {
+        //     console.log(err)
+        // })
 
     })
 }
